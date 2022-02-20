@@ -1,0 +1,148 @@
+.about {
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../../images/about-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.about__inner {
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.about__desc {
+  position: relative;
+}
+
+.about__tit {
+  @include tit();
+  margin-bottom: 10px;
+}
+
+.about__title {
+  position: relative;
+  margin-bottom: 72px;
+  @include title();
+}
+
+.about__text {
+  @include text();
+  padding-left: 185px;
+  padding-right: 5px;
+}
+
+.about__desc-line {
+  position: absolute;
+  top: 480px;
+  left: 0;
+  transform: translate(0, -50%);
+  max-width: 710px;
+  height: 3px;
+  border-bottom: 1px solid $bg-color-white;
+  background: $bg-color-white;
+  border-radius: $bd-radius;
+  margin-left: 15px;
+  z-index: 1;
+}
+
+.carousel-inner {
+  max-width: 505px;
+  max-height: 610px;
+
+  border-radius: $bd-radius;
+  overflow: hidden;
+}
+
+.d-block {
+  object-fit: cover;
+}
+
+.carousel-indicators {
+  margin: 0 auto;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  background: $bg-color-white;
+  border-radius: $bd-radius;
+}
+
+.carousel-control-prev {
+  margin-bottom: -30px;
+  color: $color-white !important;
+}
+
+.carousel-control-next {
+  margin-bottom: -30px;
+}
+
+@media screen and (max-width: 980px) {
+  .about__inner {
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .about__inner > div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .about__desc-line {
+    display: none;
+  }
+
+  .about__title {
+    padding-bottom: 40px;
+    border-bottom: 3px solid $color-white;
+  }
+
+  .about__text {
+    padding-left: 0;
+  }
+
+  .about__corusel {
+    max-height: auto;
+    margin-bottom: 0;
+  }
+  .carousel-inner {
+    max-width: 100%;
+    height: 500px;
+  }
+  .d-block {
+    width: 100% !important;
+    height: 500px !important;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about__title {
+    font-size: 55px;
+  }
+  .carousel-inner {
+    max-width: 100%;
+    height: 320px;
+  }
+  .d-block {
+    height: 320px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .about__tit {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .about__title {
+    font-size: 33px;
+    line-height: 43px;
+    margin-bottom: 50px;
+    padding-right: 10px;
+  }
+}

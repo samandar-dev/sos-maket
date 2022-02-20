@@ -1,0 +1,75 @@
+.hero__inner {
+  padding-top: 170px;
+  text-align: center;
+}
+
+.hero__title {
+  @include title();
+}
+
+.hero__tit {
+  @include tit();
+  margin-bottom: 28px;
+}
+
+.hero__btn {
+  @include btn();
+
+  background: $bg-color-1;
+  padding: 18px 18px 20px 17px;
+}
+
+.hero__btn-span {
+  border-left: 1px solid $bg-color-dark;
+  padding-left: 14px;
+  margin-left: 10px;
+}
+
+.hero__cursor {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.hero__cur-link {
+  font-family: $font-1;
+  color: $color-white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $color-1;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .hero__inner {
+    padding-top: 170px;
+  }
+  .hero__title {
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+  .hero__tit {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero__inner {
+    padding-top: 90px;
+  }
+
+  .hero__title {
+    font-size: 33px;
+    line-height: 40px;
+  }
+
+  .hero__tit {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+  }
+}

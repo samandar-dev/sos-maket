@@ -5,14 +5,478 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="css/col.css">
-  <link rel="stylesheet" href="css/style.css">
+  <title>SOS</title>
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
+  <!-- HEADER PART  -->
+
+  <section class="header-hero">
+
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__inner d-flex align-items-center justify-content-between pt-3">
+          <div class="header__logo-box">
+            <a class="header__logo-link text-decoration-none" href="index.html">
+              <img class="header__logo" src="images/logo.png" alt="logo">
+            </a>
+          </div>
+
+          <div class="header__nav-box" id="menuBox">
+            <nav class="header__nav nav">
+              <ul class="nav__list d-flex">
+                <li class="nav__item">
+                  <a class="nav__link" href="#header">MAIN</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#features">GAME FEATURES</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#system">SYSTEM REQUIREMENTS</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#quotes">QUOTES</a>
+                </li>
+              </ul>
+            </nav>
+
+            <button class="removee-btn" id="menuRemov">
+              <i class='bx bx-x'></i>
+            </button>
+          </div>
+
+          <div class="header__icons-box d-flex align-items-center">
+            <div class="header__selec selec">
+              <div class="selec__box">
+                <select class="selec__lang lang bg-transparent text-white border-0 btn-outline-none" name="languarge"
+                  id="lang">
+                  <option class="lang__eng" value="eng-lan">ENG</option>
+                  <option class="lang__eng" value="eng-lan">RUS</option>
+                  <option class="lang__eng" value="eng-lan">FRA</option>
+                  <option class="lang__eng" value="eng-lan">DEU</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="header__icons he-icons">
+              <button class="he-icons__btn bg-transparent border-0">
+                <img class="he-icons__icon" src="images/icon-1.svg" alt="icon">
+              </button>
+
+              <button class="he-icons__btn ms-2 bg-transparent border-0">
+                <img class="he-icons__icon" src="images/icon-2.svg" alt="icon">
+              </button>
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+              <i class='bx bx-menu-alt-right'></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__desc">
+            <h2 class="hero__title">SURVIVE AT ALL COSTS</h2>
+            <p class="hero__tit">Experience new social battle royale game</p>
+
+            <button class="hero__btn">Buy Now on Steam
+              <span class="hero__btn-span">$14.99</span>
+            </button>
+          </div>
+
+          <div class="hero__cursor">
+            <a class="hero__cur-link" href="#about">The story <br>
+              <i class='bx bxs-chevrons-down bx-tada'></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <!-- MAIN PART  -->
+
+  <main class="main" id="main">
+
+    <!-- ABOUT PART  -->
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner position-relative m-0 row col-12 align-items-center justify-content-between">
+          <div class="about__desc col-6">
+            <p class="about__tit">What is SOS?</p>
+            <h3 class="about__title">social battle royale game</h3>
+
+            <p class="about__text">
+              Each round, you and 15 other contestants compete to
+              escape a deadly island filled with monsters. The trick is:
+              three people can survive. Will you run
+              solo or form friendships with others to escape? <br> <br>
+
+              Making the right decisions could be the
+              difference between life and death.
+            </p>
+          </div>
+
+          <span class="about__desc-line"></span>
+
+          <div class="about__corusel col-6 p-0">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/about-slider-img-1.png" class="d-block w-100 " alt="img">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/about-slider-img-2.png" class="d-block w-100" alt="img">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/about-slider-img-3.png" class="d-block w-100" alt="img">
+                </div>
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1">
+                  </button>
+
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2">
+                  </button>
+
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3">
+                  </button>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES PART  -->
+
+    <section class="features feat" id="features">
+      <div class="container">
+        <div class="feat__inner col-12  ">
+          <div class="feat__desc col-5">
+            <p class="feat__tit">What’s so special?</p>
+            <h3 class="feat__title">features</h3>
+
+            <div class="feat__desc-menus">
+              <ul class="feat__list">
+                <li class="feat__item fe-item">
+                  <button class="fe-item__title">
+                    <span class="fe-item__icon"></span>
+                    SURVIVE AT ALL COSTS
+                  </button>
+
+                  <p class="fe-item__text">
+                    You have 30 minutes to find a relic, signal
+                    for extraction, and grab one of three spots
+                    on the rescue chopper.
+                  </p>
+                </li>
+                <li class="feat__item fe-item">
+                  <button class="fe-item__title">
+                    <span class="fe-item__icon"></span>
+                    CREATE ALLIES AND ENEMIES
+                  </button>
+
+                  <p class="fe-item__text">
+                    You have 30 minutes to find a relic, signal
+                    for extraction, and grab one of three spots
+                    on the rescue chopper.
+                  </p>
+                </li>
+                <li class="feat__item fe-item">
+
+                  <button class="fe-item__title">
+                    <span class="fe-item__icon"></span>
+                    IMPRESS THE AUDIENCE
+                  </button>
+
+                  <p class="fe-item__text">
+                    You have 30 minutes to find a relic, signal
+                    for extraction, and grab one of three spots
+                    on the rescue chopper.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEM REQUIREMENTS PART  -->
+
+    <section class="system" id="system">
+      <div class="container">
+        <div class="system__inner">
+          <p class="system__tit">Can My Computer Run this game?</p>
+          <h3 class="system__title">system requirements</h3>
+
+          <div class="system__menus sy-men">
+            <ul class="sy-men__list row m-0 p-0">
+              <li class="sy-men__item m-0 p-0">
+                <h4 class="sy-men__title">OS:</h4>
+                <p class="sy__text">
+                  Windows 7 64-bit only (No OSX support at this time)
+                </p>
+              </li>
+              <li class="sy-men__item m-0 p-0">
+                <h4 class="sy-men__title">PROCESSOR:</h4>
+                <p class="sy__text">
+                  Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+                </p>
+              </li>
+              <li class="sy-men__item m-0 p-0">
+                <h4 class="sy-men__title">MEMORY:</h4>
+                <p class="sy__text">8 GB RAM</p>
+              </li>
+              <li class="sy-men__item m-0 p-0">
+                <h4 class="sy-men__title">STORAGE:</h4>
+                <p class="sy__text">8 GB available space</p>
+              </li>
+              <li class="sy-men__item m-0 p-0">
+                <h4 class="sy-men__title">GRAPHICS:</h4>
+                <p class="sy__text">
+                  NVIDIA GeForce GTX 660 2GB or <br>
+                  AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS QUOTES PART  -->
+
+    <section class="quotes" id="quotes">
+      <div class="container">
+        <div class="quotes__inner row col-12 align-items-center">
+          <div class="quotes__desc col-5">
+            <p class="quotes__tit">What people think?</p>
+            <h3 class="quotes__title">Press quotes</h3>
+
+            <p class="quotes__text">
+              Our goal is to create a product and service
+              that you’re satisfied with and use it every
+              day. This is why we’re constantly working
+              on our services to make it better every day
+              and really listen to what our users
+              has to say.
+            </p>
+
+            <button class="quotes__btn">Read more testimonials</button>
+          </div>
+
+          <div class="quotes__menus qu-men col-7 p-0">
+            <ul class="qu-men__list">
+              <li class="qu-men__item">
+                <div class="qu-men__item-box qu-item">
+                  <div class="qu-men__img-box d-flex mb-3">
+                    <img class="qu-men__user-img" src="images//quotes-user-img1.png" alt="img">
+                    <h4 class="qu-men__user-title">Evan Lahti <br>
+                      <span class="qu-men__user-span">PC Gamer</span>
+                    </h4>
+
+                    <a class="qu-men__tw-link fs-3" href="#">
+                      <i class='bx bxl-twitter'></i>
+                    </a>
+                  </div>
+
+                  <p class="qu-men__text">
+                    “One of my gaming highlights of the year.”
+                    <br> <br> <span class="qu-men__text-span">October 18, 2018</span>
+                  </p>
+                </div>
+              </li>
+              <li class="qu-men__item">
+                <div class="qu-men__item-box qu-item">
+                  <div class="qu-men__img-box d-flex mb-3">
+                    <img class="qu-men__user-img" src="images//quotes-user-img1.png" alt="img">
+                    <h4 class="qu-men__user-title">Evan Lahti <br>
+                      <span class="qu-men__user-span">PC Gamer</span>
+                    </h4>
+
+                    <a class="qu-men__tw-link fs-3" href="#">
+                      <i class='bx bxl-twitter'></i>
+                    </a>
+                  </div>
+
+                  <p class="qu-men__text">
+                    “The next big thing in the world of streaming and survival games.”
+                    <br> <br> <span class="qu-men__text-span">October 18, 2018</span>
+                  </p>
+                </div>
+              </li>
+              <li class="qu-men__item">
+                <div class="qu-men__item-box qu-item">
+                  <div class="qu-men__img-box d-flex mb-3">
+                    <img class="qu-men__user-img" src="images//quotes-user-img1.png" alt="img">
+                    <h4 class="qu-men__user-title">Evan Lahti <br>
+                      <span class="qu-men__user-span">PC Gamer</span>
+                    </h4>
+
+                    <a class="qu-men__tw-link fs-3" href="#">
+                      <i class='bx bxl-twitter'></i>
+                    </a>
+                  </div>
+
+                  <p class="qu-men__text">
+                    “The next big thing in the world of streaming and survival games.”
+                    <br> <br> <span class="qu-men__text-span">October 18, 2018</span>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SUBSCRIBE PART -->
+
+    <section class="subscrube subs" id="subs">
+      <div class="container">
+        <div class="subs__inner d-flex align-items-center">
+          <div class="subs__img-box">
+            <img class="subs__img" src="images/newsletter-img.png" alt="img">
+          </div>
+
+          <div class="subs__desc">
+            <p class="subs__tit">Want to stay in touch?</p>
+            <h3 class="subs__title">newsletter SUBSCRIBE </h3>
+
+            <p class="subs__text">
+              In order to start receiving our news, all you have
+              to do is enter your email address. Everything else will
+              be taken care of by us. We will send you emails
+              containing information about game. We don’t spam.
+            </p>
+
+            <form class="subs__form" action="#">
+              <input class="sub__input" type="email" name="email" id="email" placeholder="Your email address" required>
+              <button class="form__btn" type="submit">Subscribe now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER PART  -->
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__header row align-items-center justify-content-between">
+          <div class="footer__logo-box w-auto">
+            <a class="footer__logo-link p-0 text-decoration-none" href="#">
+              <img src="images/footer-logo.svg" alt="logo">
+            </a>
+          </div>
+
+          <div class="footer__nav-box w-auto">
+            <nav class="footer__foot foot">
+              <ul class="foot__list d-flex">
+                <li class="foot__item">
+                  <a class="foot__link" href="#">MAIN</a>
+                </li>
+                <li class="foot__item">
+                  <a class="foot__link" href="#">ABOUT</a>
+                </li>
+                <li class="foot__item">
+                  <a class="foot__link" href="#">GAME FEATURES</a>
+                </li>
+                <li class="foot__item">
+                  <a class="foot__link" href="#">SYSTEM REQUIREMENTS</a>
+                </li>
+                <li class="foot__item">
+                  <a class="foot__link" href="#">QUOTES</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__icons-box w-auto">
+            <ul class="footer__list d-flex align-items-center justify-content-between">
+              <li class="footer__item">
+                <a class="footer__icon" href="#">
+                  <i class='bx bxl-facebook'></i>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__icon" href="#">
+                  <i class='bx bxl-twitter'></i>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__icon" href="#">
+                  <i class='bx bxl-youtube'></i>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__icon" href="#">
+                  <i class='bx bx-message-dots'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__desc fo-desc d-flex align-items-center justify-content-between">
+          <p class="fo-desc__text"> © 2018 Outpost Games, Inc. All Rights Reserved</p>
+
+          <ul class="fo-desc__desc-list d-flex align-items-center justify-content-between">
+            <li class="fo-desc__item">
+              <a class="fo-desc__item-text" href="#">Privacy Policy </a>
+            </li>
+            <li class="fo-desc__item">
+              <a class="fo-desc__item-text" href="#">| Terms of Services |</a>
+            </li>
+            <li class="fo-desc__item">
+              <a class="fo-desc__item-text" href="#"> Code of Conduct</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
   <script src="js/main.js"></script>
 </body>
 

@@ -1,0 +1,138 @@
+.system {
+  width: 100%;
+  height: 960px;
+
+  background-image: url("../../images/requirements-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  padding-top: 145px;
+  padding-bottom: 170px;
+}
+
+.system::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background: hsla(0, 0%, 0%, 0.466);
+  display: none;
+}
+
+.system__inner {
+  position: relative;
+}
+
+.system__tit {
+  @include tit();
+  text-align: center;
+}
+
+.system__title {
+  @include title();
+  text-align: center;
+  margin-bottom: 133px;
+}
+
+.sy-men__list {
+  @include list-style();
+}
+
+.system__menus {
+  max-width: 574px;
+  height: 400px;
+
+  overflow: hidden;
+  border: 1px solid hsla(0, 0%, 59%, 0.432);
+  border-radius: 0 0 20px 0;
+}
+
+.sy-men__item {
+  max-width: 50%;
+  height: 125px;
+  overflow: hidden;
+  padding: 15px 20px 35px 20px !important;
+}
+
+.sy-men__item:nth-child(1n) {
+  border-right: 1px solid hsla(0, 0%, 59%, 0.432);
+  border-bottom: 1px solid hsla(0, 0%, 59%, 0.432);
+}
+
+.sy-men__item:nth-child(2n) {
+  width: 297px;
+  border-bottom: 1px solid hsla(0, 0%, 59%, 0.432);
+}
+
+.sy-men__item:nth-child(5) {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 0;
+}
+
+.sy-men__title {
+  font-family: $font-1;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+
+  color: $color-1;
+  margin-bottom: 7px;
+}
+
+.sy__text {
+  @include text();
+}
+
+@media screen and (max-width: 670px) {
+  .system {
+    padding-top: 100px;
+    background-position: -700px bottom;
+  }
+  .system::before {
+    display: block;
+  }
+  .system__tit {
+    font-size: 28px;
+    line-height: 25px;
+  }
+  .system__title {
+    font-size: 60px;
+    line-height: 50px;
+    margin-bottom: 80px;
+  }
+  .sy-men__title {
+    font-size: 20px;
+  }
+  .sy__text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .system__tit {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .system__title {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .system__tit {
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .system__title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 50px;
+  }
+}
